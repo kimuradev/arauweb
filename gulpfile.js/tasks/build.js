@@ -4,7 +4,7 @@ var gutil        = require('gulp-util');
 
 var buildTask = function (cb) {
   gutil.env.type = 'prod';
-  gulpSequence('images', cb);
+  gulpSequence('clean', 'images', 'css', cb);
 };
 
 // gulp build           -> build for prod

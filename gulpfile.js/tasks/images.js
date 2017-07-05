@@ -18,7 +18,7 @@ var options = {};
 options.imagemin = {
     progressive: true,
     interlaced: true,
-    optimizationLevel: 3
+    optimizationLevel: 5
 };
 
 var imagesTask = function () {

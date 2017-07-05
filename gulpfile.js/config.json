@@ -31,14 +31,8 @@
         },
 
         "css": {
-            "src": "sass",
+            "src": "css",
             "dest": "css",
-            "autoprefixer": {
-                "browsers": ["last 3 version"]
-            },
-            "sass": {
-              "outputStyle": "compressed"
-            },
             "extensions": ["sass", "scss", "css"]
         },
 
