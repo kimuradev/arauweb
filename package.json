@@ -1,0 +1,24 @@
+{
+  "name": "arauweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp gulp:serve",
+    "build": "gulp gulp:build"
+  },
+  "author": "Leandro Kimura",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-util": "^3.0.8",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.2"
+  }
+}
