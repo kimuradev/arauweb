@@ -13,9 +13,9 @@
         },
 
         "html": {
-            "src": "templates",
-            "dest": "./",
-            "extensions": ["html", "json"]
+            "src": "./",
+            "dest": "html",
+            "extensions": ["html", "shtml"]
         },
 
         "images": {
