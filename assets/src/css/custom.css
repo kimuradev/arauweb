@@ -9,3 +9,21 @@
   background-color: #f1f1f1;
   line-height: 260px;
 }
+
+.arauweb-error-background {
+  background-color: #777;
+  text-align: center;
+}
+
+.arauweb-error-background p{
+  color: #000;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
