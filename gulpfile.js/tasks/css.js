@@ -16,7 +16,6 @@ var cssTask = function () {
     gulp.src(paths.src)
       .pipe(concat('style.min.css'))
       .pipe(cssmin())
-      //.pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest(paths.dest));
 };
 
