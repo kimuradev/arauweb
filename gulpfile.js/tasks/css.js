@@ -21,7 +21,7 @@ gulp.task('cssTask', function () {
 });
 
 gulp.task('cssVendorTask', function () {
-  gulp.src('./vendor/rs-plugin/css/*.css')
+  gulp.src('./vendor/**/*.css')
     .pipe(concat('vendor.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('./assets/dist/css/vendor'));

@@ -1,4 +1,8 @@
 /* Add here all your CSS customizations */
+.body {
+  font-family: 'Open Sans';
+}
+
 .arauweb-color {
   color: #89b837;
 }
@@ -26,4 +30,18 @@
   max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.arauweb-big-icon {
+  display: inline-block;
+  margin: 15px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-size: 40px;
+  line-height: 110px;
 }
