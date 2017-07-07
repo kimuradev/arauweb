@@ -9,15 +9,27 @@ var path      = require('path');
 
 var paths = {
   src: path.join(config.root.src, config.tasks.css.src, '/**/*.{' + config.tasks.css.extensions + '}'),
+  srcFonts: path.join(config.root.src, config.tasks.css.src, '/**/*.{' + config.tasks.css.fontExtensions + '}'),
   dest: path.join(config.root.dest, config.tasks.css.dest)
 };
 
-var cssTask = function () {
+gulp.task('cssTask', function () {
   gulp.src(paths.src)
     .pipe(concat('style.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest(paths.dest));
-};
+});
 
-gulp.task('css', cssTask);
-module.exports = cssTask;
+gulp.task('cssVendorTask', function () {
+  gulp.src('./vendor/rs-plugin/css/*.css')
+    .pipe(concat('vendor.min.css'))
+    .pipe(cssmin())
+    .pipe(gulp.dest('./assets/dist/css/vendor'));
+});
+
+gulp.task('cssFontsTask', function () {
+  gulp.src(paths.srcFonts)
+    .pipe(gulp.dest(paths.dest));
+});
+
+gulp.task('css', ['cssTask','cssVendorTask','cssFontsTask']);

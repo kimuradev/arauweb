@@ -3,7 +3,7 @@ var gulp        = require('gulp');
 var del         = require('del');
 
 var cleanTask = function (cb) {
-  del([config.root.dest]).then(function (paths) {
+  del([config.root.dest, '*.min.html', '*.min.shtml']).then(function (paths) {
       cb();
   });
 };

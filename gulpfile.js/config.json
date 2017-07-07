@@ -33,7 +33,8 @@
         "css": {
             "src": "css",
             "dest": "css",
-            "extensions": ["sass", "scss", "css"]
+            "extensions": ["sass", "scss", "css"],
+            "fontExtensions": ["ttf", "woff", "woff2", "eot", "svg"]
         },
 
         "js": {

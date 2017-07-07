@@ -15,7 +15,8 @@ var htmlTask = function() {
   return gulp.src(paths.src)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(paths.dest));
+    .pipe(gulp.dest(paths.dest))
+    .pipe(gulp.dest('./'));
 };
 
 gulp.task('html', htmlTask);
