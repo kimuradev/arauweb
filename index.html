@@ -21,18 +21,28 @@
 
 		<!-- Vendor CSS -->
     <link rel="stylesheet" href="assets/dist/css/vendor/vendor.min.css" />
-    <!-- <link rel="preload" as="style" href="assets/dist/css/vendor/vendor.min.css" onload="this.rel='stylesheet'"> -->
+    <!-- <link rel="stylesheet" href="assets/dist/css/vendor/vendor.min.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="assets/dist/css/vendor/vendor.min.css"></noscript> -->
 
 		<!-- Minified CSS - Theme/Skin -->
-    <link rel="stylesheet" href="assets/dist/css/style.min.css" />
-    <!-- <link rel="preload" as="style" href="assets/dist/css/style.min.css" onload="this.rel='stylesheet'"> -->
+    <!-- <link rel="stylesheet" href="assets/dist/css/style.min.css" /> -->
+    <link rel="stylesheet" href="assets/dist/css/style.min.css" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="assets/dist/css/style.min.css"></noscript>
 
 		<!-- Head Libs -->
 		<script async src="vendor/modernizr/modernizr.min.js"></script>
 
+    <style media="screen">
+      #cover {
+        background: url("assets/dist/img/ajax-loader.gif") no-repeat scroll center center #FFF;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
 	</head>
 	<body class="one-page" data-target="#header" data-spy="scroll" data-offset="100">
-
+    <div id="cover"></div>
 		<div class="body">
 			<header id="header" class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
 				<div class="header-body">
@@ -1272,25 +1282,8 @@
 		<!-- Minified JS - Theme/ Portfolio -->
     <script src="assets/dist/js/script.min.js"></script>
 
-    <!-- <script src="assets/src/js/criticalcss-bookmarklet-devtool-snippet.js"></script> -->
-
 		<!-- Current Page Vendor and Views -->
 		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-
-    <!-- <link rel="stylesheet" href="assets/dist/css/style.min.css"> -->
-
-    <!-- <script>
-      var cb = function() {
-      var l = document.createElement('link'); l.rel = 'stylesheet';
-      l.href = 'assets/dist/css/vendor/vendor.min.css';
-      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-      webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-    </script> -->
 
 	</body>
 </html>
