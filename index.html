@@ -20,13 +20,15 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/dist/css/vendor/vendor.min.css">
+    <!-- <link rel="stylesheet" href="assets/dist/css/vendor/vendor.min.css" rel="preload" as="style"> -->
+    <link rel="preload" as="style" href="assets/dist/css/vendor/vendor.min.css" onload="this.rel='stylesheet'">
 
 		<!-- Minified CSS - Theme/Skin -->
-    <link rel="stylesheet" href="assets/dist/css/style.min.css">
+    <!-- <link rel="stylesheet" href="assets/dist/css/style.min.css"> -->
+    <link rel="preload" as="style" href="assets/dist/css/style.min.css" onload="this.rel='stylesheet'">
 
 		<!-- Head Libs -->
-		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<script async src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
 	<body class="one-page" data-target="#header" data-spy="scroll" data-offset="100">
@@ -1270,8 +1272,25 @@
 		<!-- Minified JS - Theme/ Portfolio -->
     <script src="assets/dist/js/script.min.js"></script>
 
+    <!-- <script src="assets/src/js/criticalcss-bookmarklet-devtool-snippet.js"></script> -->
+
 		<!-- Current Page Vendor and Views -->
-		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
+    <!-- <link rel="stylesheet" href="assets/dist/css/style.min.css"> -->
+
+    <!-- <script>
+      var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'assets/dist/css/vendor/vendor.min.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script> -->
 
 	</body>
 </html>
