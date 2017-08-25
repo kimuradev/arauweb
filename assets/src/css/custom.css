@@ -7,6 +7,12 @@
   color: #89b837;
 }
 
+.header-slogan {
+  float: right;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .arauweb-img {
   max-width: 100%;
   background-color: #f1f1f1;
@@ -20,6 +26,30 @@
     background-color: #f1f1f1;
     line-height: 360px;
   }
+ .tp-caption.bottom-label.splitted, .tp-caption.top-label {
+   font-size: 14px !important;
+   text-align: center;
+ }
+ .tp-caption.bottom-label {
+   font-size: 10px !important;
+   text-align: center;
+ }
+ #tp-caption-left, #tp-caption-right {
+   display: none;
+ }
+
+ .tp-caption.btn.btn-lg.btn-primary.btn-slider-action {
+   font-size: 14px !important;
+   padding: 15px 8px !important;
+   margin-top: 20px !important;
+ }
+ .tp-caption.top-label {
+   padding-bottom: 10px !important;
+ }
+ .tp-caption.main-label {
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+ }
 }
 
 .arauweb-error-background {
